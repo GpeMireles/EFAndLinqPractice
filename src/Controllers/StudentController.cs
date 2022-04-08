@@ -23,7 +23,7 @@ namespace EFAndLinqPractice_SchoolAPI.Controllers
             return Ok(students);
         }
 
-        [HttpGet("/{id:int}")]
+        [HttpGet("{id:int}")]
         public IActionResult GetStudent(int id)
         {
             var student = _studentService.GetById(id);
@@ -47,7 +47,7 @@ namespace EFAndLinqPractice_SchoolAPI.Controllers
             return CreatedAtAction(nameof(GetStudent), new { id = createdStudent.Id}, student);
         }
 
-        [HttpDelete("/{id:int}")]
+        [HttpDelete("{id:int}")]
         public IActionResult DeleteStudent(int id)
         {
             if (id == 0)
