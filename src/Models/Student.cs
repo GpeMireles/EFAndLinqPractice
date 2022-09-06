@@ -22,6 +22,8 @@ namespace EFAndLinqPractice_SchoolAPI.Models
         [Required]
         [Column(TypeName = "decimal(3,2)")]
         public decimal Height { get; set; }
+
+        public float Weight { get; set; }
         public List<Course> Courses { get; set; } = new List<Course>();
     }
 }
