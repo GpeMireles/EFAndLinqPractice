@@ -16,6 +16,7 @@ namespace EFAndLinqPractice_SchoolAPI.Models
         public string Name { get; set; }
 
         [Required]
+        [Column(TypeName = "date")]
         public DateTime Birthday { get; set; }
 
         [Required]
