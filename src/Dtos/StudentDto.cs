@@ -13,11 +13,6 @@ namespace EFAndLinqPractice_SchoolAPI.Dtos
 
         public string Name { get; set; }
 
-        public DateTime Birthday { get; set; }
-
-        public decimal Height { get; set; }
-
-        public float Weight { get; set; }
         public List<string> Courses { get; set; } = new List<string>();
     }
 }
